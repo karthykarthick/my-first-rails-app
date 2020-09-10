@@ -66,3 +66,31 @@ Processing by CarsController#new as HTML
 Completed 200 OK in 164ms (Views: 135.8ms | ActiveRecord: 1.2ms | Allocations: 14279)
 
 
+Started GET "/" for ::1 at 2020-09-10 22:41:26 +0530
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/karthick/.rvm/gems/ruby-2.5.3/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/karthick/.rvm/gems/ruby-2.5.3/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.9ms | Allocations: 466)
+Completed 200 OK in 25ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 2630)
+
+
+Started GET "/cars" for ::1 at 2020-09-10 22:41:36 +0530
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:16
+  Rendered cars/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1410)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 120.1ms | ActiveRecord: 2.4ms | Allocations: 8940)
+
+
+Started GET "/cars/new" for ::1 at 2020-09-10 22:41:39 +0530
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (Duration: 98.1ms | Allocations: 3597)
+  Rendered cars/new.html.erb within layouts/application (Duration: 99.9ms | Allocations: 3968)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 130.5ms | ActiveRecord: 0.5ms | Allocations: 12244)
+
+
